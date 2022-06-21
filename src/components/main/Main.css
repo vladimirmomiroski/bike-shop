@@ -1,0 +1,7 @@
+.main-content {
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding:2.5rem 0;
+    background-color: white;
+}

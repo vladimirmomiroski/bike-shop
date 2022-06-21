@@ -1,0 +1,77 @@
+.filter-wrapper {
+    width:22%;
+    padding:0.5rem 1rem;
+    margin-right:1rem;
+}
+
+.show-all, .show-male, .show-female, .space-bottom {
+    display:flex;
+    justify-content: space-between;
+}
+
+.space-bottom {
+    margin-bottom:0.6rem;
+}
+
+.show-all {
+    padding:1.7rem 0;
+}
+
+.show-all button {
+    font-size:17px;
+}
+
+.show-all, .gender {
+    border-bottom: 1px solid rgb(189, 189, 189);
+}
+
+.gender, .brand {
+    padding:1rem 0;
+}
+
+.title-gender, .title-brand {
+    margin-bottom:0.6rem;
+}
+
+.badge {
+    width:30px;
+    border-radius:35%;
+    color:rgb(14, 14, 14);
+    text-align: center;
+    padding:0.1rem 0;
+}
+
+.unactive-badge {
+    background-color: rgb(231, 231, 231);
+}
+
+.active {
+    color:orange; 
+ }
+
+ .unactive-link {
+    color:rgb(61, 60, 60);
+ }
+ 
+.active-badge {
+    background-color: orange;
+}
+
+
+.filter-link:hover {
+    color:orange;
+    transition: .1s ease-in-out;
+}
+
+.filter-link:hover + .badge {
+    background-color: orange;
+}
+
+.filter-link {
+    cursor:pointer;
+    border:none;
+    background-color: transparent;
+    font-size:16px;
+    font-weight: 500;
+}
+
