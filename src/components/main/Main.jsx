@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './Main.css'
 import Filter from './Filter'
 import Cards from './cards/Cards'
+import bikes from '../../bikes';
 
 export default class Main extends Component {
 
@@ -11,13 +12,9 @@ export default class Main extends Component {
     }
 
     componentDidMount() {
-        fetch("https://json-project3.herokuapp.com/products")
-        .then(res => res.json())
-        .then(mainData => {
-            this.setState({
-                mainData,
-                filterData: mainData,
-            })
+        this.setState({
+            mainData: bikes,
+            filterData: bikes,
         })
     }
 
